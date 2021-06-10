@@ -10,7 +10,6 @@ class Asteroid:
         self.pos = np.array([x, y])
         # Additional properties goes here:
        
-        print(self.pos[0])
         self.a = a
         self.b = b
 
@@ -27,7 +26,6 @@ class Asteroid:
         #self.pos[0] +=a
         #self.pos[1] +=a
         # Set position of asteroid based on given parameter
-        #print(self.pos[0:1])
 
         # Leave the rest of the code
         # Wrap asteroid around the edges so it always stay on screen
@@ -44,3 +42,4 @@ class Asteroid:
     # Draw the asteroid onto the canvas
     def draw(self):
         pygame.draw.circle(self.surface, (0, 0, 255), (self.pos[0], self.pos[1]), self.radius)
+        pygame.draw.circle(self.surface, (0, 255, 255), (0,0), self.radius)
